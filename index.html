@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101820">
+  <title>MVP Club | Learn. Build. Lead.</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #101820;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #3a3425;
+    }
+
+    .logo {
+      color: #d9b45b;
+      font-size: 25px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 70px 20px;
+      background: linear-gradient(135deg, #101820, #1c2933);
+    }
+
+    .hero h1 {
+      color: #d9b45b;
+      font-size: clamp(38px, 7vw, 65px);
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      font-size: 18px;
+      color: #e5e5e5;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #d9b45b;
+      color: #101820;
+      padding: 13px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 65px 8%;
+      text-align: center;
+    }
+
+    section h2 {
+      color: #d9b45b;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      max-width: 750px;
+      margin: auto;
+      color: #dddddd;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 35px;
+    }
+
+    .card {
+      background: #1c2933;
+      border: 1px solid #66552e;
+      padding: 28px;
+      border-radius: 14px;
+    }
+
+    .card h3 {
+      color: #d9b45b;
+      margin-bottom: 12px;
+    }
+
+    footer {
+      background: #080d12;
+      padding: 25px;
+      text-align: center;
+      color: #bdbdbd;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 12px;
+      }
+
+      .hero {
+        min-height: 65vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">MVP CLUB</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#community">Community</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero" id="home">
+      <h1>WELCOME TO MVP CLUB</h1>
+      <p>
+        Learn. Launch. Build. Lead. Transform Lives.
+        A community where people learn, grow, develop leadership,
+        and work toward a better future together.
+      </p>
+      <a class="button" href="#about">Discover MVP Club</a>
+    </div>
+
+    <section id="about">
+      <h2>OUR VISION</h2>
+      <p>
+        MVP Club is built around learning, personal development,
+        teamwork, and leadership. Our goal is to help people
+        discover their potential and take meaningful steps
+        toward their goals.
+      </p>
+    </section>
+
+    <section id="community">
+      <h2>BE PART OF THE COMMUNITY</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>LEARN</h3>
+          <p>Develop skills, knowledge, and a growth mindset.</p>
+        </div>
+
+        <div class="card">
+          <h3>BUILD</h3>
+          <p>Take action, build relationships, and grow together.</p>
+        </div>
+
+        <div class="card">
+          <h3>LEAD</h3>
+          <p>Develop confidence and become a positive influence.</p>
+        </div>
+
+        <div class="card">
+          <h3>TRANSFORM</h3>
+          <p>Inspire others through progress, purpose, and service.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>CONNECT WITH MVP CLUB</h2>
+      <p>
+        Want to know more about MVP Club?
+        Connect with our community and learn more about our journey.
+      </p>
+      <br>
+      <a class="button" href="https://www.facebook.com/" target="_blank">
+        CONNECT WITH US
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 MVP Club. All Rights Reserved.
+    <br>
+    Learn. Launch. Build. Lead. Transform Lives.
+  </footer>
+
+</body>
+</html>
